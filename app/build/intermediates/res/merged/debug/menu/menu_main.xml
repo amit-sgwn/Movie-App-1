@@ -1,9 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.mystoryapp.sangwan.movieapp1.MainActivity" >
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+    tools:context="com.mystoryapp.sangwan.movieapp1.MainActivity">
+    <item
+        android:id="@+id/action_settings"
         android:orderInCategory="100"
+        android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item android:id="@+id/popular"
+        android:title="Sort by Popularity"
+        android:orderInCategory="100"
+        />
 </menu>

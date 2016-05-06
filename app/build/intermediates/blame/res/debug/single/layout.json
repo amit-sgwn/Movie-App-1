@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\Users\\Sangwan\\Desktop\\MovieApp1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",

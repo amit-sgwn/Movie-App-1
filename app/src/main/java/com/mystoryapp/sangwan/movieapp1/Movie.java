@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.example.sangwan.popular_movie_app.R;
+//import com.example.sangwan.popular_movie_app.R;
 
 import java.text.DateFormat;
 import java.text.ParseException;

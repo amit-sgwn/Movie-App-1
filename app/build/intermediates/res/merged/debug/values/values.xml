@@ -259,6 +259,8 @@
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Sort_P">Sort by Popularity</string>
+    <string name="Sort_R">Sort by Rating</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -283,7 +285,13 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="refresh">Refresh</string>
+    <string name="release_date_missing">Release date is unknown</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_activity_forecast">Forecast</string>
+    <string name="title_activity_forecst_fregment">ForecstFregment</string>
+    <string name="url_for_downloading_backdrop">http://image.tmdb.org/t/p/original</string>
+    <string name="url_for_downloading_poster">http://image.tmdb.org/t/p/w342</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
