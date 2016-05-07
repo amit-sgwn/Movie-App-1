@@ -56,6 +56,6 @@ public class ImageAdapter extends BaseAdapter {
         DisplayMetrics m = context.getResources().getDisplayMetrics();
         int x = m.widthPixels;
         width=Math.round(x/2);
-        this.width = width;
+
     }
 }

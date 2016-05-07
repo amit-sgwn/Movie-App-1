@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -76,13 +77,14 @@ public class MainActivityFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String str) {
+            //super.onPostExecute(str);
             try {
                 ArrayList<String> imageArray=getImageUrl(str);
                 gridView.setAdapter(new ImageAdapter(getActivity(),imageArray));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            super.onPostExecute(str);
+
         }
 
         public ArrayList<String> getImageUrl(String str) throws JSONException {
@@ -103,14 +105,22 @@ public class MainActivityFragment extends Fragment {
 
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-            final String FATCH_BASE_URL = "http://api.themoviedb.org/3/discover/movie?";
-            final String SORY_BY = "sort_by";
-            final String APPID_PARAM = "key";
-            final String OPEN_MOVIE_API_KEY = "key";
+            final String API_BASE_URL = "http://api.themoviedb.org/3/movie/";
+            final String API_PARAM_PAGE = "page";
+            final String API_PARAM_KEY = "api_key";
+            final String API_SORTING = PreferenceManager
+                    .getDefaultSharedPreferences(getActivity())
+                    .getString(
+                            getString(R.string.pref_sorting_key),
+                            getString(R.string.pref_sorting_default_value)
+                    );
+//Enter api key OPEN_MOVIE_API_KEY
+            final String OPEN_MOVIE_API_KEY = "Enter key";
 
-            Uri builtUri = Uri.parse(FATCH_BASE_URL).buildUpon()
-                    .appendQueryParameter(SORY_BY, orderBy)
-                    .appendQueryParameter(APPID_PARAM, OPEN_MOVIE_API_KEY)
+            Uri builtUri = Uri.parse(API_BASE_URL).buildUpon()
+                    .appendPath(API_SORTING)
+                    .appendQueryParameter(API_PARAM_PAGE,String.valueOf(params))
+                    .appendQueryParameter(API_PARAM_KEY, OPEN_MOVIE_API_KEY)
                     .build();
 
             Log.e("url", builtUri.toString());

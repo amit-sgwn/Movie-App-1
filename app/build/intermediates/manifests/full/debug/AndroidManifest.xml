@@ -24,6 +24,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.mystoryapp.sangwan.movieapp1.Movie_Detail"
+            android:label="@string/title_activity_movie__detail"
+            android:parentActivityName="com.mystoryapp.sangwan.movieapp1.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mystoryapp.sangwan.movieapp1.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mystoryapp.sangwan.movieapp1.Setting_Activity"
+            android:label="@string/title_activity_setting_"
+            android:parentActivityName="com.mystoryapp.sangwan.movieapp1.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mystoryapp.sangwan.movieapp1.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
