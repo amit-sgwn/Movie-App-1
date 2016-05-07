@@ -55,6 +55,7 @@ public class MainActivityFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        new FatchImage().execute();
         return rootView ;
     }
 
@@ -104,8 +105,8 @@ public class MainActivityFragment extends Fragment {
             BufferedReader reader = null;
             final String FATCH_BASE_URL = "http://api.themoviedb.org/3/discover/movie?";
             final String SORY_BY = "sort_by";
-            final String APPID_PARAM = "533facc74513006600e075fac0583c9e";
-            final String OPEN_MOVIE_API_KEY = "";
+            final String APPID_PARAM = "key";
+            final String OPEN_MOVIE_API_KEY = "key";
 
             Uri builtUri = Uri.parse(FATCH_BASE_URL).buildUpon()
                     .appendQueryParameter(SORY_BY, orderBy)
