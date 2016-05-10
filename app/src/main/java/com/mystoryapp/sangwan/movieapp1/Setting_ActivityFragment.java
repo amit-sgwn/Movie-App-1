@@ -5,30 +5,22 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.Map;
+
 
 /**
  * A placeholder fragment containing a simple view.
  */
-public class Setting_ActivityFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
-
-    public Setting_ActivityFragment() {
-    }
+public class Setting_ActivityFragment extends PreferenceFragment
+        implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.pref);
-    }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_setting_, container, false);
+        // Load the preferences from an XML resource
+        addPreferencesFromResource(R.xml.pref);
     }
 
     @Override
@@ -44,6 +36,7 @@ public class Setting_ActivityFragment extends PreferenceFragment implements Shar
             listPref.setSummary(listPref.getEntry().toString());
         }
     }
+
     private void triggerSharePreferencesChange() {
         SharedPreferences pref = getPreferenceScreen().getSharedPreferences();
         Map<String,?> keys = pref.getAll();
@@ -64,6 +57,7 @@ public class Setting_ActivityFragment extends PreferenceFragment implements Shar
         triggerSharePreferencesChange();
 
     }
+
     @Override
     public void onPause() {
         getPreferenceManager().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(this);
